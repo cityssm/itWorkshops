@@ -11,12 +11,12 @@ Please let me know what you thought of today's workshop.
 
 **Department**
 
-___
+<br /><hr />
 
 
 **Division**
 
-___
+<br /><hr />
 
 
 **Did you find today's workshop "Data Sources in Microsoft Excel 2016" useful?**
@@ -29,6 +29,7 @@ ___
 
 
 **What did you like about today's workshop?  What part(s) of today's workshop where most valuable to you?**
+
 <br /><hr />
 <br /><hr />
 <br /><hr />
@@ -37,6 +38,7 @@ ___
 
 
 **What did you dislike?  What part(s) of today’s workshop were least valuable to you?**
+
 <br /><hr />
 <br /><hr />
 <br /><hr />
@@ -55,4 +57,5 @@ ___
 &#x25A2; Internet (ex. Web browsers, cookies, history, advanced searching, etc.)
 
 &#x25A2; Something else? Write it below.
-___
+
+<br /><hr />
