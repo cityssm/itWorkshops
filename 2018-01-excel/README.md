@@ -4,7 +4,7 @@ The purpose of this workshop is to demonstrate linking together resources from m
 and show off the 3D Maps feature, which now comes standard in Microsoft Excel 2016.
 
 **Participants**
-- [Workshop Landing Page](https://cityssm.github.io/2018-01-excel/index.htm)
+- [Workshop Landing Page](https://cityssm.github.io/itWorkshops/2018-01-excel/index.htm)
 
 **Presenter**
 - [Presentation](presentation.pptx)
