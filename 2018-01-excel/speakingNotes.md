@@ -3,7 +3,7 @@
 Note that the following speaking notes may be incomplete.
 Their purpose is to remind the presenter what to do next.
 
-## Speaking Notes
+## Project One - Garbage Collection
 
 Open Excel, and create a blank workbook.
 
@@ -167,3 +167,41 @@ Return to the map.
 Return to CollectionCalendar.  Add "Province" and "Country" columns.  Populate accordingly.
 
 Return to map to add columns.
+
+## Project Two - City Beautification
+
+Create a new spreadsheet.
+
+Add the "City Beautification" data source.
+
+Insert ribbon > 3D Maps
+- Picks up the "Street Name" column.
+
+Add the "Civic Number" column.
+- Note that there is no corresponding geographic type for Civic Number.
+- Could assemble a "full address" if need be.
+
+Return to spreadsheet.  Add the latest addresses.
+- CSV is in the "cache" column.
+
+Use the "Merge" tool.
+- Data ribbon > New Query > Combine Queries > Merge.
+- Top box, select "City Beautifcation" table.  Use Ctrl-Click to select "Civic Number" and "Street Name" columns.
+- Bottom box, select "cache" table.  Use Ctrl-Click to select "CivicNumber" and "StreetName" columns.
+- Make sure "Left Outer" join is selected.
+
+Query Editor appears.
+- Try "Close and Load".
+- Note that no columns from the merged table appear.
+
+Hover over "merge" query.  Go to Edit.
+- "cache" column heading, click Expand button.
+- Uncheck "(Select All Columns)".
+- Check "OA:x" and "OA:y".
+- "Close and Load".
+
+The columns appear.  3D Map it!
+- Remove all default columns in the Location field.
+- Collapse the "City Beautification" field list.
+- Add the "OA:x" location column.  Set as either "X Coordinate" or "Longitude".
+- Add the "OA:y" location column.  Set as either "Y Coordinate" or "Latitude".
