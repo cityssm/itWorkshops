@@ -10,21 +10,21 @@ Please let me know what you thought of today's workshop.
 **Every field is optional**, but the more you can offer, the better we can shape these workshops to meet your needs.
 
 **Department**
-
-<br /><hr />
+___
 
 
 **Division**
-
-<br /><hr />
+___
 
 
 **Did you find today's workshop "Data Sources in Microsoft Excel 2016" useful?**
 
 &#x25A2; Very useful
-
+&nbsp;
+&nbsp;
 &#x25A2; Somewhat useful
-
+&nbsp;
+&nbsp;
 &#x25A2; Not useful
 
 
@@ -33,14 +33,10 @@ Please let me know what you thought of today's workshop.
 <br /><hr />
 <br /><hr />
 <br /><hr />
-<br /><hr />
-<br /><hr />
 
 
 **What did you dislike?  What part(s) of today’s workshop were least valuable to you?**
 
-<br /><hr />
-<br /><hr />
 <br /><hr />
 <br /><hr />
 <br /><hr />
@@ -56,6 +52,6 @@ Please let me know what you thought of today's workshop.
 
 &#x25A2; Internet (ex. Web browsers, cookies, history, advanced searching, etc.)
 
-&#x25A2; Something else? Write it below.
+&#x25A2; Something else?
 
-<br /><hr />
+___
