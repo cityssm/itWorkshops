@@ -1,10 +1,9 @@
-# IT Workshop – January 2018
-## Data Sources in Microsoft Excel 2016
+# January 2018 - Data Sources in Microsoft Excel 2016
 
-Note that the following is speaking notes.  It may be incomplete.
-It's purpose is to remind the presenter what to do next.
+Note that the following speaking notes may be incomplete.
+Their purpose is to remind the presenter what to do next.
 
-### Notes
+## Speaking Notes
 
 Open Excel, and create a blank workbook.
 
