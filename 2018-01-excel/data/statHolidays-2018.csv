@@ -1,0 +1,15 @@
+PublicHolidayName,PublicHolidayDate,DesignatedDate,AffectsGarbageCollection
+New Year's Day,1/1/2018,1/1/2018,TRUE
+IT Workshop Stat (FAKE STAT),1/10/2018,1/10/2018,TRUE
+Family Day,2/19/2018,2/19/2018,TRUE
+Good Friday,3/30/2018,3/30/2018,TRUE
+Easter Sunday,4/1/2018,4/1/2018,FALSE
+Easter Monday,4/2/2018,4/2/2018,TRUE
+Victoria Day,5/21/2018,5/21/2018,TRUE
+Canada Day,7/1/2018,7/2/2018,TRUE
+Sir William Hearst Day,8/6/2018,8/6/2018,TRUE
+Labour Day,9/3/2018,9/3/2018,TRUE
+Thanksgiving,10/8/2018,10/8/2018,TRUE
+Remembrance Day,11/11/2018,11/12/2018,FALSE
+Christmas,12/25/2018,12/25/2018,TRUE
+Boxing Day,12/26/2018,12/26/2018,FALSE
