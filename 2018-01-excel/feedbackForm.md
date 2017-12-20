@@ -19,13 +19,13 @@ ___
 
 **Did you find today's workshop "Data Sources in Microsoft Excel 2016" useful?**
 
-&#x25A2; Very useful
+&#9634; Very useful
 &nbsp;
 &nbsp;
-&#x25A2; Somewhat useful
+&#9634; Somewhat useful
 &nbsp;
 &nbsp;
-&#x25A2; Not useful
+&#9634; Not useful
 
 
 **What did you like about today's workshop?  What part(s) of today's workshop where most valuable to you?**
@@ -44,14 +44,14 @@ ___
 
 **What topic(s) would you be interested in learning more about?**
 
-&#x25A2; Microsoft Word (ex. Mail merges, labels, creating accessible documents, etc.)
+&#9634; Microsoft Word (ex. Mail merges, labels, creating accessible documents, etc.)
 
-&#x25A2; Microsoft Excel (ex. External data sources, advanced formulas, etc.)
+&#9634; Microsoft Excel (ex. External data sources, advanced formulas, etc.)
 
-&#x25A2; Microsoft Outlook (ex. Email signatures, out-of-office notifications, email rules, etc.)
+&#9634; Microsoft Outlook (ex. Email signatures, out-of-office notifications, email rules, etc.)
 
-&#x25A2; Internet (ex. Web browsers, cookies, history, advanced searching, etc.)
+&#9634; Internet (ex. Web browsers, cookies, history, advanced searching, etc.)
 
-&#x25A2; Something else?
+&#9634; Something else?
 
 ___
