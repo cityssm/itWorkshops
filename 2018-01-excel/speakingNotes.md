@@ -4,6 +4,8 @@
 Note that the following is speaking notes.  It may be incomplete.
 It's purpose is to remind the presenter what to do next.
 
+### Notes
+
 Open Excel, and create a blank workbook.
 
 Import first data source, Waste Collection Calendar.
@@ -17,7 +19,7 @@ Import first data source, Waste Collection Calendar.
 Delete "A" row.
 
 Refresh.
--	Notice that “A” row comes back.  Need to clean up in another way.
+-	Notice that "A" row comes back.  Need to clean up in another way.
 
 Note the "Workbook Queries" sidebar.
 - Rename "Table 0" to "CollectionCalendar".
@@ -44,7 +46,7 @@ Format column to remove time.
 Add "Current Week" column.
 - `=[@[Current Date]]-weekday([@[Current Date]])`
 -	Form column as date.
--	Check work.  Incorrect.  It’s a Saturday.
+-	Check work.  Incorrect.  It's a Saturday.
 -	Update formula to add 1.
 
 Create a new sheet for Days of Week.
@@ -134,7 +136,7 @@ Note the `#N/A` result.
 -	#N/A values calculate #N/A values.
 -	Revise formula.
 -	`=IFNA([@[Next Week Stat Date]]<=[@[Next Week Regular Collection Date]],FALSE)`
--	Revise “Current Week Collection Affected By Stat” column as well.
+-	Revise "Current Week Collection Affected By Stat" column as well.
 
 Add "Next Week Collection Date" column.
 -	`IF` function
