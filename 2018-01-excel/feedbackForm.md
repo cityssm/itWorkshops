@@ -10,48 +10,48 @@ Please let me know what you thought of today's workshop.
 **Every field is optional**, but the more you can offer, the better we can shape these workshops to meet your needs.
 
 **Department**
+
 ___
 
 
 **Division**
+
 ___
 
 
 **Did you find today's workshop "Data Sources in Microsoft Excel 2016" useful?**
 
-&#9634; Very useful
+[_____] Very useful
 &nbsp;
 &nbsp;
-&#9634; Somewhat useful
+[_____] Somewhat useful
 &nbsp;
 &nbsp;
-&#9634; Not useful
+[_____] Not useful
 
 
 **What did you like about today's workshop?  What part(s) of today's workshop where most valuable to you?**
 
-<br /><hr />
-<br /><hr />
-<br /><hr />
+_____
+_____
+_____
 
 
 **What did you dislike?  What part(s) of today’s workshop were least valuable to you?**
 
-<br /><hr />
-<br /><hr />
-<br /><hr />
+_____
+_____
+_____
 
 
 **What topic(s) would you be interested in learning more about?**
 
-&#9634; Microsoft Word (ex. Mail merges, labels, creating accessible documents, etc.)
+[_____] Microsoft Word (ex. Mail merges, labels, creating accessible documents, etc.)
 
-&#9634; Microsoft Excel (ex. External data sources, advanced formulas, etc.)
+[_____] Microsoft Excel (ex. External data sources, advanced formulas, etc.)
 
-&#9634; Microsoft Outlook (ex. Email signatures, out-of-office notifications, email rules, etc.)
+[_____] Microsoft Outlook (ex. Email signatures, out-of-office notifications, email rules, etc.)
 
-&#9634; Internet (ex. Web browsers, cookies, history, advanced searching, etc.)
-
-&#9634; Something else?
+[_____] Something else?
 
 ___
