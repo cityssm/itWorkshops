@@ -4,8 +4,8 @@ The purpose of this workshop is to demonstrate linking together resources from m
 and show off the 3D Maps feature, which now comes standard in Microsoft Excel 2016.
 
 **Participants**
-- [Workshop Landing Page](2018-01-excel/index.htm)
+- [Workshop Landing Page](index.htm)
 
 **Presenter**
-- [Presentation](2018-01-excel/presentation.pptx)
-- [Speaking Notes](2018-01-excel/speakingNotes.md)
+- [Presentation](presentation.pptx)
+- [Speaking Notes](speakingNotes.md)
