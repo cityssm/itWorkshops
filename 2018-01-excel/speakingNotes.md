@@ -3,9 +3,15 @@
 Note that the following speaking notes may be incomplete.
 Their purpose is to remind the presenter what to do next.
 
+Be sure that participants have the
+[Workshop Landing Page](https://cityssm.github.io/itWorkshops/2018-01-excel/index.htm)
+open for links to the necessary data sources.
+
 ## Project One - Garbage Collection
 
-Open Excel, and create a blank workbook.
+Open Microsoft Excel 2016.  Create a blank workbook.
+
+**Workbook**
 
 Import first data source, Waste Collection Calendar.
 - New sheet
@@ -15,10 +21,10 @@ Import first data source, Waste Collection Calendar.
 - Navigator window > Table 0
 - Load.
 
-Delete "A" row.
+In the worksheet, delete "A" row.
 
 Refresh.
--	Notice that "A" row comes back.  Need to clean up in another way.
+-	Notice that "A" row comes back.  We need to clean up in another way.
 
 Note the "Workbook Queries" sidebar.
 - Rename "Table 0" to "CollectionCalendar".
@@ -26,9 +32,11 @@ Note the "Workbook Queries" sidebar.
 Rename sheet.
 -	Rename to "CollectionCalendar".
 
-Hover over query.  "Edit".
+Hover over "CollectionCalendar" query.  "Edit".
 
-Filter out one letters.
+**Power Query**
+
+Filter out letter rows using the "Day of Week" column.
 -	"Day of Week" dropdown.
 -	Uncheck "Select All".
 -	Select the actual days of the week.
@@ -36,6 +44,8 @@ Filter out one letters.
 Remove "Calendar" column.
 
 Close and Load.
+
+**Workbook**
 
 Add "Current Date" column.
 -	`=today()`
@@ -50,6 +60,7 @@ Add "Current Week" column.
 
 Create a new sheet for Days of Week.
 -	Name the sheet "DaysOfWeek".
+- Build the table below.
 
 | Day of Week | Day of Week Offset |
 | ----------- | -----------------: |
@@ -84,15 +95,20 @@ Remind that stat holidays can affect garbage collection.  Create a new sheet.
 -	Rename table as "StatHolidays".
 
 Hover over query.  "Edit".
--	Filter “AffectsGarbageCollection” to only show “TRUE”.
+
+**Power Query**
+
+Filter “AffectsGarbageCollection” to only show “TRUE”.
 -	Close and Load.
+
+**Workbook**
 
 Add "Designated Week" column.
 -	`=[@DesignatedDate]-weekday([@DesignatedDate])+1`
 
-Go to CollectionCalendar sheet.  Add "Current Week Stat Date".  Think.
+Go to "CollectionCalendar" sheet.  Add "Current Week Stat Date".  Think.
 -	Note that when using VLOOKUP, the lookup matches the leftmost column, then returns data from a column to the right.
--	We can’t rearrange the imported and calculated columns, as they will be lost on refresh.
+-	We can't rearrange the imported and calculated columns, as they will be lost on refresh.
 
 Return to StatHolidays sheet.  Add "Stat Date" column.
 -	`=[@DesignatedDate]`
@@ -151,20 +167,30 @@ Add "Next Collection Date" column.
 
 Add a 3D Map.
 -	Insert ribbon > 3D Map.
--	Note that the mapping tool tries, but the Street Name alone is not enough to map accurately.
+
+**3D Map**
+
+Note that the mapping tool tries, but the Street Name alone is not enough to map accurately.
+
+**Workbook**
 
 Return to "CollectionCalendar" sheet.  Add "City" column.
 -	Type Sault Ste. Marie.
 -	Notice it doesn’t fill down.  Formulas work better here.
 -	`="Sault Ste. Marie"`
 
-Return to the map.
--	Notice that City is not available.
+**3D Map**
+
+Notice that City is not available.
 -	Refresh Data.
 -	Under Location, Add Field.
 -	Set City.
 
-Return to CollectionCalendar.  Add "Province" and "Country" columns.  Populate accordingly.
+**Workbook**
+
+Return to "CollectionCalendar".  Add "Province" and "Country" columns.  Populate accordingly.
+
+**3D Map**
 
 Return to map to add columns.
 
@@ -186,8 +212,10 @@ Return to spreadsheet.  Add the latest addresses.
 
 Use the "Merge" tool.
 - Data ribbon > New Query > Combine Queries > Merge.
-- Top box, select "City Beautifcation" table.  Use Ctrl-Click to select "Civic Number" and "Street Name" columns.
-- Bottom box, select "cache" table.  Use Ctrl-Click to select "CivicNumber" and "StreetName" columns.
+- Top box, select "City Beautifcation" table.
+  Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to select "Civic Number" and "Street Name" columns.
+- Bottom box, select "cache" table.
+  Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to select "CivicNumber" and "StreetName" columns.
 - Make sure "Left Outer" join is selected.
 
 Query Editor appears.
