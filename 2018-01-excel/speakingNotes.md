@@ -176,7 +176,7 @@ Note that the mapping tool tries, but the Street Name alone is not enough to map
 
 Return to "CollectionCalendar" sheet.  Add "City" column.
 -	Type Sault Ste. Marie.
--	Notice it doesn’t fill down.  Formulas work better here.
+-	Notice it does not fill down.  Formulas work better here.
 -	`="Sault Ste. Marie"`
 
 **3D Map**
