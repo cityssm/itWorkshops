@@ -98,7 +98,7 @@ Hover over query.  "Edit".
 
 **Power Query**
 
-Filter “AffectsGarbageCollection” to only show “TRUE”.
+Filter "AffectsGarbageCollection" to only show "TRUE".
 -	Close and Load.
 
 **Workbook**
