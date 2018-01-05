@@ -161,36 +161,7 @@ Insert **Next Collection Date** column.
 -	Value_if_true = `[@[Current Week Collection Date]]`
 -	Value_if_false = `[@[Next Week Collection Date]]`
 
-## *Time Permitting*
-
-Add a **3D Map**.
--	Insert ribbon > 3D Map.
-
-### 3D Map
-
-Note that the mapping tool tries, but the Street Name alone is not enough to map accurately.
-
-### Workbook
-
-Return to "CollectionCalendar" sheet.  Add **City** column.
--	Type *Sault Ste. Marie*.
--	Notice it does not fill down.  Formulas work better here.
--	`="Sault Ste. Marie"`
-
-### 3D Map
-
-Notice that "City" is not available.
--	Refresh Data.
--	Under Location, Add Field.
--	Set City.
-
-### Workbook
-
-Return to "CollectionCalendar".  Insert **Province** and **Country** columns.  Populate accordingly.
-
-### 3D Map
-
-Return to map to add columns.
+Hide the unneccessary columns.
 
 ---
 
