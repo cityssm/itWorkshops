@@ -685,6 +685,7 @@ pre.editor-colors .fold-marker:after {
 <li>Value_if_true = <code>[@[Current Week Regular Collection Date]]+1</code></li>
 <li>Value_if_false = <code>[@[Current Week Regular Collection Date]]</code></li>
 </ul>
+<p><em>Skip calculating the "Next Week" columns if time does not permit.</em></p>
 <p>Insert <strong>Next Week</strong> column.</p>
 <ul>
 <li><code>=[@[Current Week]]+7</code></li>
@@ -709,7 +710,7 @@ pre.editor-colors .fold-marker:after {
 </ul>
 <p>Note the <code>#N/A</code> result.</p>
 <ul>
-<li>#N/A values calculate #N/A values.</li>
+<li><code>#N/A</code> values calculate <code>#N/A</code> values.</li>
 <li>Revise formula.</li>
 <li><code>=IFNA([@[Next Week Stat Date]]&lt;=[@[Next Week Regular Collection Date]],FALSE)</code></li>
 <li>Revise "Current Week Collection Affected By Stat" column as well.</li>

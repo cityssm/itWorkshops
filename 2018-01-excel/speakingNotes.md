@@ -125,6 +125,8 @@ Insert **Current Week Collection Date** column.
 -	Value_if_true = `[@[Current Week Regular Collection Date]]+1`
 -	Value_if_false = `[@[Current Week Regular Collection Date]]`
 
+*Skip calculating the "Next Week" columns if time does not permit.*
+
 Insert **Next Week** column.
 -	`=[@[Current Week]]+7`
 -	Format if necessary.
@@ -144,7 +146,7 @@ Insert **Next Week Collection Affected By Stat** column.
 -	`=[@[Next Week Stat Date]]<=[@[Next Week Regular Collection Date]]`
 
 Note the `#N/A` result.
--	#N/A values calculate #N/A values.
+-	`#N/A` values calculate `#N/A` values.
 -	Revise formula.
 -	`=IFNA([@[Next Week Stat Date]]<=[@[Next Week Regular Collection Date]],FALSE)`
 -	Revise "Current Week Collection Affected By Stat" column as well.
