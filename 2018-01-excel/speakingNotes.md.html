@@ -530,9 +530,9 @@ pre.editor-colors .fold-marker:after {
 <p>Note that the following speaking notes may be incomplete. Their purpose is to remind the presenter what to do next.</p>
 <p>Be sure that participants have the <a href="https://cityssm.github.io/itWorkshops/2018-01-excel/index.htm">Workshop Landing Page</a> open for links to the necessary data sources.</p>
 <h2 id="project-one-garbage-collection">Project One - Garbage Collection</h2>
-<p>Open Microsoft Excel 2016.  Create a blank workbook.</p>
+<p>(1) - Open Microsoft Excel 2016.  Create a blank workbook.</p>
 <h3 id="workbook">Workbook</h3>
-<p>Import first data source, <strong>Waste Collection Calendar</strong>.</p>
+<p>(2) - Import first data source, <strong>Waste Collection Calendar</strong>.</p>
 <ul>
 <li>Create a new sheet.</li>
 <li>Data ribbon.</li>
@@ -541,43 +541,42 @@ pre.editor-colors .fold-marker:after {
 <li>Navigator window &gt; Table 0.</li>
 <li>Load.</li>
 </ul>
-<p>In the worksheet, delete "A" row.</p>
-<p>Refresh the data.</p>
+<p>(3) - In the worksheet, delete "A" row.</p>
+<p>(4) - Refresh the data.</p>
 <ul>
 <li>Notice that "A" row comes back.  We need to clean up in another way.</li>
 </ul>
-<p>Note the <em>Workbook Queries</em> sidebar.</p>
+<p>(5) - Note the <em>Workbook Queries</em> sidebar.</p>
 <ul>
 <li>Rename "Table 0" to <strong>CollectionCalendar</strong>.</li>
 </ul>
-<p>Rename sheet.</p>
+<p>(6) - Rename sheet.</p>
 <ul>
 <li>Rename to <strong>CollectionCalendar</strong>.</li>
 </ul>
-<p>Hover over "CollectionCalendar" query.  "Edit".</p>
+<p>(7) - Hover over "CollectionCalendar" query.  "Double-click" it, or choose "Edit".</p>
 <h3 id="power-query">Power Query</h3>
-<p>Filter out letter rows using the "Day of Week" column.</p>
+<p>(8) - Filter out letter rows using the "Day of Week" column.</p>
 <ul>
 <li>"Day of Week" dropdown.</li>
 <li>Uncheck "Select All".</li>
 <li>Select the actual days of the week.</li>
 </ul>
-<p>Remove "Calendar" column.</p>
-<p>Close and Load.</p>
+<p>(10) - Close and Load.</p>
 <h3 id="workbook">Workbook</h3>
-<p>Add <strong>Current Date</strong> column.</p>
+<p>(11) - Add <strong>Current Date</strong> column.</p>
 <ul>
 <li><code>=today()</code></li>
 <li>Format column as a date.</li>
 </ul>
-<p>Add <strong>Current Week</strong> column.</p>
+<p>(12) - Add <strong>Current Week</strong> column.</p>
 <ul>
 <li><code>=[@[Current Date]]-weekday([@[Current Date]])</code></li>
 <li>Form column as a date.</li>
 <li>Check work.  Incorrect.  It's a Saturday.</li>
 <li>Update formula to add 1.</li>
 </ul>
-<p>Create a new sheet for Days of Week.</p>
+<p>(13) - Create a new sheet for Days of Week.</p>
 <ul>
 <li>Name the sheet "DaysOfWeek".</li>
 <li>Build the table below.</li>
@@ -623,7 +622,7 @@ pre.editor-colors .fold-marker:after {
 <ul>
 <li>Table ribbon &gt; Table Name &gt; "DaysOfWeek".</li>
 </ul>
-<p>Return to "CollectionCalendar" sheet.  Add <strong>Day of Week Offset</strong> column.</p>
+<p>(14) - Return to "CollectionCalendar" sheet.  Add <strong>Day of Week Offset</strong> column.</p>
 <ul>
 <li><code>VLOOKUP</code> function.</li>
 <li>Lookup_value = <code>[@[Day of Week]]</code></li>
@@ -631,13 +630,13 @@ pre.editor-colors .fold-marker:after {
 <li>Col_index_num = <code>2</code></li>
 <li>Range_lookup = <code>FALSE</code></li>
 </ul>
-<p>Add <strong>Current Week Regular Collection Date</strong> column.</p>
+<p>(15) - Add <strong>Current Week Regular Collection Date</strong> column.</p>
 <ul>
 <li><code>=[@[Current Week]]+[@[Day Of Week Offset]]</code></li>
 <li>Format column.</li>
 <li>Check work.</li>
 </ul>
-<p>Remind that stat holidays can affect garbage collection.  Create a new sheet.</p>
+<p>(16) - Remind that stat holidays can affect garbage collection.  Create a new sheet.</p>
 <ul>
 <li>Data ribbon.</li>
 <li>Get &amp; Transform &gt; New Query &gt; From Other Sources &gt; From Web.</li>
@@ -646,27 +645,27 @@ pre.editor-colors .fold-marker:after {
 <li>Rename sheet as "StatHolidays".</li>
 <li>Rename table as "StatHolidays".</li>
 </ul>
-<p>Hover over query.  "Edit".</p>
+<p>(17) - Hover over query.  "Double-click" or choose "Edit".</p>
 <h3 id="power-query">Power Query</h3>
-<p>Filter "AffectsGarbageCollection" to only show "TRUE".</p>
+<p>(18) - Filter "AffectsGarbageCollection" to only show "TRUE".</p>
 <ul>
 <li>Close and Load.</li>
 </ul>
 <h3 id="workbook">Workbook</h3>
-<p>Insert <strong>Designated Week</strong> column.</p>
+<p>(19) - Insert <strong>Designated Week</strong> column.</p>
 <ul>
 <li><code>=[@DesignatedDate]-weekday([@DesignatedDate])+1</code></li>
 </ul>
-<p>Go to "CollectionCalendar" sheet.  Insert <strong>Current Week Stat Date</strong> column.  Think.</p>
+<p>(20) - Go to "CollectionCalendar" sheet.  Insert <strong>Current Week Stat Date</strong> column.  Think.</p>
 <ul>
 <li>Note that when using <code>VLOOKUP</code>, the lookup matches the leftmost column, then returns data from a column to the right.</li>
 <li>We can't rearrange the imported and calculated columns, as they will be lost on refresh.</li>
 </ul>
-<p>Return to "StatHolidays" sheet.  Insert <strong>Stat Date</strong> column.</p>
+<p>(21) - Return to "StatHolidays" sheet.  Insert <strong>Stat Date</strong> column.</p>
 <ul>
 <li><code>=[@DesignatedDate]</code></li>
 </ul>
-<p>Populate <strong>Current Week Stat Date</strong>.</p>
+<p>(22) - Populate <strong>Current Week Stat Date</strong>.</p>
 <ul>
 <li><code>VLOOKUP</code> function.</li>
 <li>Lookup_value = <code>[@[Current Week]]</code></li>
@@ -674,29 +673,29 @@ pre.editor-colors .fold-marker:after {
 <li>Col_index_num = <code>2</code></li>
 <li>Range_lookup = <code>FALSE</code></li>
 </ul>
-<p>Insert <strong>Current Week Collection Affected By Stat</strong> column.</p>
+<p>(23) - Insert <strong>Current Week Collection Affected By Stat</strong> column.</p>
 <ul>
 <li><code>=[@[Current Week Stat Date]]&lt;=[@[Current Week Regular Collection Date]]</code></li>
 </ul>
-<p>Insert <strong>Current Week Collection Date</strong> column.</p>
+<p>(24) - Insert <strong>Current Week Collection Date</strong> column.</p>
 <ul>
 <li><code>IF</code> function.</li>
 <li>Logical_test = <code>[@[Current Week Collection Affected By Stat]]</code></li>
 <li>Value_if_true = <code>[@[Current Week Regular Collection Date]]+1</code></li>
 <li>Value_if_false = <code>[@[Current Week Regular Collection Date]]</code></li>
 </ul>
-<p><em>Skip calculating the "Next Week" columns if time does not permit.</em></p>
-<p>Insert <strong>Next Week</strong> column.</p>
+<p><em>Good stopping point if time does not permit.</em></p>
+<p>(25) - Insert <strong>Next Week</strong> column.</p>
 <ul>
 <li><code>=[@[Current Week]]+7</code></li>
 <li>Format if necessary.</li>
 </ul>
-<p>Insert <strong>Next Week Regular Collection Date</strong> column.</p>
+<p>(26) - Insert <strong>Next Week Regular Collection Date</strong> column.</p>
 <ul>
 <li><code>=[@[Current Week Regular Collection Date]]+7</code></li>
 <li>Format if necessary.</li>
 </ul>
-<p>Insert <strong>Next Week Stat Date</strong> column.</p>
+<p>(27) - Insert <strong>Next Week Stat Date</strong> column.</p>
 <ul>
 <li><code>VLOOKUP</code> function.</li>
 <li>Lookup_value = <code>[@[Next Week]]</code></li>
@@ -704,32 +703,32 @@ pre.editor-colors .fold-marker:after {
 <li>Col_index_num = <code>2</code></li>
 <li>Range_lookup = <code>FALSE</code></li>
 </ul>
-<p>Insert <strong>Next Week Collection Affected By Stat</strong> column.</p>
+<p>(29) - Insert <strong>Next Week Collection Affected By Stat</strong> column.</p>
 <ul>
 <li><code>=[@[Next Week Stat Date]]&lt;=[@[Next Week Regular Collection Date]]</code></li>
 </ul>
-<p>Note the <code>#N/A</code> result.</p>
+<p>(30) - Note the <code>#N/A</code> result.</p>
 <ul>
 <li><code>#N/A</code> values calculate <code>#N/A</code> values.</li>
 <li>Revise formula.</li>
 <li><code>=IFNA([@[Next Week Stat Date]]&lt;=[@[Next Week Regular Collection Date]],FALSE)</code></li>
 <li>Revise "Current Week Collection Affected By Stat" column as well.</li>
 </ul>
-<p>Insert <strong>Next Week Collection Date</strong> column.</p>
+<p>(31) - Insert <strong>Next Week Collection Date</strong> column.</p>
 <ul>
 <li><code>IF</code> function.</li>
 <li>Logical_test = <code>[@[Next Week Collection Affected By Stat]]</code></li>
 <li>Value_if_true = <code>[@[Next Week Regular Collection Date]]+1</code></li>
 <li>Value_if_false = <code>[@[Next Week Regular Collection Date]]</code></li>
 </ul>
-<p>Insert <strong>Next Collection Date</strong> column.</p>
+<p>(32) - Insert <strong>Next Collection Date</strong> column.</p>
 <ul>
 <li><code>IF</code> function.</li>
 <li>Logical_test = <code>[@[Current Week Collection Date]]&gt;[@[Current Date]]</code></li>
 <li>Value_if_true = <code>[@[Current Week Collection Date]]</code></li>
 <li>Value_if_false = <code>[@[Next Week Collection Date]]</code></li>
 </ul>
-<p>Hide the unneccessary columns.</p>
+<p>(33) - Hide the unnecessary columns.</p>
 <hr>
 <h2 id="project-two-city-beautification">Project Two - City Beautification</h2>
 <p>Create a new workbook.</p>

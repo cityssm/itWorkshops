@@ -6,11 +6,11 @@ Be sure that participants have the [Workshop Landing Page](https://cityssm.githu
 
 ## Project One - Garbage Collection
 
-Open Microsoft Excel 2016.  Create a blank workbook.
+(1) - Open Microsoft Excel 2016.  Create a blank workbook.
 
 ### Workbook
 
-Import first data source, **Waste Collection Calendar**.
+(2) - Import first data source, **Waste Collection Calendar**.
 - Create a new sheet.
 - Data ribbon.
 - Get & Transform > New Query > From Other Sources > From Web.
@@ -18,43 +18,41 @@ Import first data source, **Waste Collection Calendar**.
 - Navigator window > Table 0.
 - Load.
 
-In the worksheet, delete "A" row.
+(3) - In the worksheet, delete "A" row.
 
-Refresh the data.
+(4) - Refresh the data.
 -	Notice that "A" row comes back.  We need to clean up in another way.
 
-Note the *Workbook Queries* sidebar.
+(5) - Note the *Workbook Queries* sidebar.
 - Rename "Table 0" to **CollectionCalendar**.
 
-Rename sheet.
+(6) - Rename sheet.
 -	Rename to **CollectionCalendar**.
 
-Hover over "CollectionCalendar" query.  "Edit".
+(7) - Hover over "CollectionCalendar" query.  "Double-click" it, or choose "Edit".
 
 ### Power Query
 
-Filter out letter rows using the "Day of Week" column.
+(8) - Filter out letter rows using the "Day of Week" column.
 -	"Day of Week" dropdown.
 -	Uncheck "Select All".
 -	Select the actual days of the week.
 
-Remove "Calendar" column.
-
-Close and Load.
+(10) - Close and Load.
 
 ### Workbook
 
-Add **Current Date** column.
+(11) - Add **Current Date** column.
 -	`=today()`
 - Format column as a date.
 
-Add **Current Week** column.
+(12) - Add **Current Week** column.
 - `=[@[Current Date]]-weekday([@[Current Date]])`
 -	Form column as a date.
 -	Check work.  Incorrect.  It's a Saturday.
 -	Update formula to add 1.
 
-Create a new sheet for Days of Week.
+(13) - Create a new sheet for Days of Week.
 -	Name the sheet "DaysOfWeek".
 - Build the table below.
 
@@ -70,19 +68,19 @@ Create a new sheet for Days of Week.
 
 -	Table ribbon > Table Name > "DaysOfWeek".
 
-Return to "CollectionCalendar" sheet.  Add **Day of Week Offset** column.
+(14) - Return to "CollectionCalendar" sheet.  Add **Day of Week Offset** column.
 -	`VLOOKUP` function.
 -	Lookup_value = `[@[Day of Week]]`
 -	Table_array = `DaysOfWeek`
 -	Col_index_num = `2`
 -	Range_lookup = `FALSE`
 
-Add **Current Week Regular Collection Date** column.
+(15) - Add **Current Week Regular Collection Date** column.
 -	`=[@[Current Week]]+[@[Day Of Week Offset]]`
 -	Format column.
 -	Check work.
 
-Remind that stat holidays can affect garbage collection.  Create a new sheet.
+(16) - Remind that stat holidays can affect garbage collection.  Create a new sheet.
 -	Data ribbon.
 -	Get & Transform > New Query > From Other Sources > From Web.
 -	Paste URL to **statHolidays.csv**.
@@ -90,80 +88,80 @@ Remind that stat holidays can affect garbage collection.  Create a new sheet.
 -	Rename sheet as "StatHolidays".
 -	Rename table as "StatHolidays".
 
-Hover over query.  "Edit".
+(17) - Hover over query.  "Double-click" or choose "Edit".
 
 ### Power Query
 
-Filter "AffectsGarbageCollection" to only show "TRUE".
+(18) - Filter "AffectsGarbageCollection" to only show "TRUE".
 -	Close and Load.
 
 ### Workbook
 
-Insert **Designated Week** column.
+(19) - Insert **Designated Week** column.
 -	`=[@DesignatedDate]-weekday([@DesignatedDate])+1`
 
-Go to "CollectionCalendar" sheet.  Insert **Current Week Stat Date** column.  Think.
+(20) - Go to "CollectionCalendar" sheet.  Insert **Current Week Stat Date** column.  Think.
 -	Note that when using `VLOOKUP`, the lookup matches the leftmost column, then returns data from a column to the right.
 -	We can't rearrange the imported and calculated columns, as they will be lost on refresh.
 
-Return to "StatHolidays" sheet.  Insert **Stat Date** column.
+(21) - Return to "StatHolidays" sheet.  Insert **Stat Date** column.
 -	`=[@DesignatedDate]`
 
-Populate **Current Week Stat Date**.
+(22) - Populate **Current Week Stat Date**.
 -	`VLOOKUP` function.
 -	Lookup_value = `[@[Current Week]]`
 -	Table_array = `StatHolidays[[Designated Week]:[Stat Date]]`
 -	Col_index_num = `2`
 -	Range_lookup = `FALSE`
 
-Insert **Current Week Collection Affected By Stat** column.
+(23) - Insert **Current Week Collection Affected By Stat** column.
 -	`=[@[Current Week Stat Date]]<=[@[Current Week Regular Collection Date]]`
 
-Insert **Current Week Collection Date** column.
+(24) - Insert **Current Week Collection Date** column.
 -	`IF` function.
 -	Logical_test = `[@[Current Week Collection Affected By Stat]]`
 -	Value_if_true = `[@[Current Week Regular Collection Date]]+1`
 -	Value_if_false = `[@[Current Week Regular Collection Date]]`
 
-*Skip calculating the "Next Week" columns if time does not permit.*
+*Good stopping point if time does not permit.*
 
-Insert **Next Week** column.
+(25) - Insert **Next Week** column.
 -	`=[@[Current Week]]+7`
 -	Format if necessary.
 
-Insert **Next Week Regular Collection Date** column.
+(26) - Insert **Next Week Regular Collection Date** column.
 -	`=[@[Current Week Regular Collection Date]]+7`
 -	Format if necessary.
 
-Insert **Next Week Stat Date** column.
+(27) - Insert **Next Week Stat Date** column.
 -	`VLOOKUP` function.
 -	Lookup_value = `[@[Next Week]]`
 -	Table_array = `StatHolidays[[Designated Week]:[Stat Date]]`
 -	Col_index_num = `2`
 -	Range_lookup = `FALSE`
 
-Insert **Next Week Collection Affected By Stat** column.
+(29) - Insert **Next Week Collection Affected By Stat** column.
 -	`=[@[Next Week Stat Date]]<=[@[Next Week Regular Collection Date]]`
 
-Note the `#N/A` result.
+(30) - Note the `#N/A` result.
 -	`#N/A` values calculate `#N/A` values.
 -	Revise formula.
 -	`=IFNA([@[Next Week Stat Date]]<=[@[Next Week Regular Collection Date]],FALSE)`
 -	Revise "Current Week Collection Affected By Stat" column as well.
 
-Insert **Next Week Collection Date** column.
+(31) - Insert **Next Week Collection Date** column.
 -	`IF` function.
 -	Logical_test = `[@[Next Week Collection Affected By Stat]]`
 -	Value_if_true = `[@[Next Week Regular Collection Date]]+1`
 -	Value_if_false = `[@[Next Week Regular Collection Date]]`
 
-Insert **Next Collection Date** column.
+(32) - Insert **Next Collection Date** column.
 -	`IF` function.
 -	Logical_test = `[@[Current Week Collection Date]]>[@[Current Date]]`
 -	Value_if_true = `[@[Current Week Collection Date]]`
 -	Value_if_false = `[@[Next Week Collection Date]]`
 
-Hide the unneccessary columns.
+(33) - Hide the unnecessary columns.
 
 ---
 
