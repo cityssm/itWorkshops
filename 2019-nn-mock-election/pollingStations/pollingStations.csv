@@ -1,0 +1,16 @@
+PollingStationKey,PollingStationName,Address,City,Province,Country,PostalCode,Ward,EligibleVoterCount
+AA,Algoma University,1520 Queen Street East,Sault Ste. Marie,ON,CA,P6A 2G4,1,110
+BB,Sault College,443 Northern Avenue,Sault Ste. Marie,ON,CA,P6B 4J3,3,110
+CC,Anna McCrea Public School,250 Mark Street,Sault Ste. Marie,ON,CA,P6A 3M7,1,110
+DD,Ben R. McMullin Public School,24 Paradise Avenue,Sault Ste. Marie,ON,CA,P6B 5K2,3,110
+EE,Etienne Brule Public School,226 Albert Street West,Sault Ste. Marie,ON,CA,P6A 1B6,2,110
+FF,Korah Collegiate and Vocational School,636 Goulais Avenue,Sault Ste. Marie,ON,CA,P6C 5A7,4,110
+GG,R. M. Moore Public School,1272 Base Line,Sault Ste. Marie,ON,CA,P6A 6K4,5,110
+HH,St. Mary's College,868 Second Line East,Sault Ste. Marie,ON,CA,P6B 6K4,3,110
+II,Holy Cross Catholic School,16 Texas Avenue,Sault Ste. Marie,ON,CA,P6A 4Y8,1,110
+JJ,St. Mary's French Immersion Catholic School,124 Gibbs Street,Sault Ste. Marie,ON,CA,P6A 5H6,1,110
+KK,St. Paul Catholic School,78 Dablon Street,Sault Ste. Marie,ON,CA,P6B 5E6,3,110
+LL,Holy Family Catholic School,42 Rushmere Drive,Sault Ste. Marie,ON,CA,P6C 2T4,5,110
+MM,Our Lady of Lourdes Catholic School,319 Prentice Avenue,Sault Ste. Marie,ON,CA,P6C 4R7,4,110
+NN,Ecole Notre-Dame-du-Sault,600 North Street,Sault Ste. Marie,ON,CA,P6B 2B9,4,110
+OO,Ecole publique Echo-des-Rapides,145 Hugill Street,Sault Ste. Marie,ON,CA,P6A 4E9,1,110

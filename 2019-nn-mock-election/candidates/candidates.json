@@ -1,0 +1,53 @@
+{
+  "candidates": [{
+      "CandidateKey": "captainAmerica",
+      "CandidateName": "Captain America",
+      "MailingAddress": "269 Queen Street East",
+      "MailingCity": "Sault Ste. Marie",
+      "MailingProvince": "ON",
+      "MailingCountry": "CA",
+      "MailingPostalCode": "P6A 1Y9",
+      "CandidateImage": "captainAmerica.svg"
+    },
+    {
+      "CandidateKey": "hawkEye",
+      "CandidateName": "Hawk Eye",
+      "MailingAddress": "65 Foster Drive",
+      "MailingCity": "Sault Ste. Marie",
+      "MailingProvince": "ON",
+      "MailingCountry": "CA",
+      "MailingPostalCode": "P6A 6V2",
+      "CandidateImage": "hawkEye.svg"
+    },
+    {
+      "CandidateKey": "hulk",
+      "CandidateName": "Hulk",
+      "MailingAddress": "556 Goulais Avenue",
+      "MailingCity": "Sault Ste. Marie",
+      "MailingProvince": "ON",
+      "MailingCountry": "CA",
+      "MailingPostalCode": "P6C 5A7",
+      "CandidateImage": "hulk.svg"
+    },
+    {
+      "CandidateKey": "ironMan",
+      "CandidateName": "Iron Man",
+      "MailingAddress": "50 East Street",
+      "MailingCity": "Sault Ste. Marie",
+      "MailingProvince": "ON",
+      "MailingCountry": "CA",
+      "MailingPostalCode": "P6A 3C3",
+      "CandidateImage": "ironMan.svg"
+    },
+    {
+      "CandidateKey": "thor",
+      "CandidateName": "Thor",
+      "MailingAddress": "128 Sackville Road",
+      "MailingCity": "Sault Ste. Marie",
+      "MailingProvince": "ON",
+      "MailingCountry": "CA",
+      "MailingPostalCode": "P6B 4T6",
+      "CandidateImage": "thor.svg"
+    }
+  ]
+}

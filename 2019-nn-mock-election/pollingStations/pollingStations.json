@@ -1,0 +1,169 @@
+{
+  "pollingStations": [
+    {
+      "PollingStationKey": "AA",
+      "PollingStationName": "Algoma University",
+      "Address": "1520 Queen Street East",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 2G4",
+      "Ward": "1",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "BB",
+      "PollingStationName": "Sault College",
+      "Address": "443 Northern Avenue",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6B 4J3",
+      "Ward": "3",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "CC",
+      "PollingStationName": "Anna McCrea Public School",
+      "Address": "250 Mark Street",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 3M7",
+      "Ward": "1",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "DD",
+      "PollingStationName": "Ben R. McMullin Public School",
+      "Address": "24 Paradise Avenue",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6B 5K2",
+      "Ward": "3",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "EE",
+      "PollingStationName": "Etienne Brule Public School",
+      "Address": "226 Albert Street West",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 1B6",
+      "Ward": "2",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "FF",
+      "PollingStationName": "Korah Collegiate and Vocational School",
+      "Address": "636 Goulais Avenue",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6C 5A7",
+      "Ward": "4",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "GG",
+      "PollingStationName": "R. M. Moore Public School",
+      "Address": "1272 Base Line",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 6K4",
+      "Ward": "5",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "HH",
+      "PollingStationName": "St. Mary's College",
+      "Address": "868 Second Line East",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6B 6K4",
+      "Ward": "3",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "II",
+      "PollingStationName": "Holy Cross Catholic School",
+      "Address": "16 Texas Avenue",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 4Y8",
+      "Ward": "1",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "JJ",
+      "PollingStationName": "St. Mary's French Immersion Catholic School",
+      "Address": "124 Gibbs Street",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 5H6",
+      "Ward": "1",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "KK",
+      "PollingStationName": "St. Paul Catholic School",
+      "Address": "78 Dablon Street",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6B 5E6",
+      "Ward": "3",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "LL",
+      "PollingStationName": "Holy Family Catholic School",
+      "Address": "42 Rushmere Drive",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6C 2T4",
+      "Ward": "5",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "MM",
+      "PollingStationName": "Our Lady of Lourdes Catholic School",
+      "Address": "319 Prentice Avenue",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6C 4R7",
+      "Ward": "4",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "NN",
+      "PollingStationName": "Ecole Notre-Dame-du-Sault",
+      "Address": "600 North Street",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6B 2B9",
+      "Ward": "4",
+      "EligibleVoterCount": "110"
+    },
+    {
+      "PollingStationKey": "OO",
+      "PollingStationName": "Ecole publique Echo-des-Rapides",
+      "Address": "145 Hugill Street",
+      "City": "Sault Ste. Marie",
+      "Province": "ON",
+      "Country": "CA",
+      "PostalCode": "P6A 4E9",
+      "Ward": "1",
+      "EligibleVoterCount": "110"
+    }
+  ]
+}

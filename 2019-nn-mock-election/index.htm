@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-T8Hp0+7hNSzMWfUlwSbmLBVrToSckKSiobfGsr5PL1ezzM/+aTdPnnMBTicJvoib" crossorigin="anonymous">
+
+  <title>IT Workshop - Mock Election</title>
+</head>
+
+<body>
+  <div class="container mt-2 mb-2">
+    <div class="row">
+      <nav class="col-md-3">
+        <ul class="nav nav-pills nav-fill flex-md-column" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">
+              Workshop Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-one" role="tab" aria-controls="tab-one" aria-selected="false">
+              <small>Step One</small><br />
+              We're having an election!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-two" role="tab" aria-controls="tab-two" aria-selected="false">
+              <small>Step Two</small><br />
+              The candidates are ready</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-three" role="tab" aria-controls="tab-three" aria-selected="false">
+              <small>Step Three</small><br />
+              Cast your votes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-four" role="tab" aria-controls="tab-four" aria-selected="false">
+              <small>Step Four</small><br />
+              The votes are in!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-five" role="tab" aria-controls="tab-five" aria-selected="false">
+              <small>Step Five</small><br />
+              And the winner is...</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-md-9">
+        <div class="tab-content">
+          <section class="tab-pane show active" id="tab-home">
+            <h1 class="text-center">Welcome to Mock Mayoral Election 2019</h1>
+            <p class="text-center mt-5 mb-5">
+              <i class="far fa-10x fa-circle"></i>
+              <i class="far fa-10x fa-times-circle text-danger"></i>
+              <i class="far fa-10x fa-check-circle text-success"></i>
+            </p>
+            <p>
+              In this workshop, we will explore some simple accessibility issues in the content we produce today,
+              how to recognize them, and how to correct them.
+              We will also perform some analysis in Excel to determine the winner in a mock election.
+            </p>
+            <p class="alert alert-warning">
+              <i class="fas fa-4x fa-exclamation-triangle float-left mr-2"></i>
+              Note that this is a <strong>mock</strong> mayoral election.<br />
+              Any likenesses between the candidates listed on this website and actual mayoral candidates
+              is purely coincidental, and frankly, pretty amazing!
+            </p>
+          </section>
+          <section class="tab-pane" id="tab-one" role="tabpanel">
+            <h2 class="text-center">Pre-Election Documents</h2>
+            <div class="row">
+              <div class="col-md">
+                <h3 class="mt-4 text-center">Call for Candidates Poster</h3>
+                <p class="text-center">
+                  <img class="img-fluid" src="img/callForCandidates.png" alt="Poster Thumbnail" style="margin-bottom:2px" />
+                </p>
+                <a class="btn btn-block btn-primary" href="demoDocuments/callForCandidates.pub">
+                  <i class="fas fa-download"></i>
+                  Download
+                  <span class="d-none d-sm-inline">Call For Candidates</span>
+                  Poster
+                </a>
+              </div>
+              <div class="col-md">
+                <h3 class="mt-4 text-center">Candidate Application Form</h3>
+                <p class="text-center">
+                  <img class="img-fluid" src="img/nominationForm.png" alt="Form Thumbnail" />
+                </p>
+                <a class="btn btn-block btn-primary" href="demoDocuments/nominationForm.docx">
+                  <i class="fas fa-download"></i>
+                  Download
+                  <span class="d-none d-sm-inline">Nomination</span>
+                  Form
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="tab-pane" id="tab-two" role="tabpanel">
+            <h2 class="text-center">Candidates for Mayor</h2>
+            <div class="row" id="candidates-container"></div>
+
+            <div class="row">
+              <div class="col-md">
+                <a class="btn btn-block btn-primary" href="candidates/candidates.csv">
+                  <i class="fas fa-download"></i>
+                  Download Candidate CSV
+                </a>
+              </div>
+              <div class="col-md">
+                <a class="btn btn-block btn-primary" href="demoDocuments/allCandidateLetter.docx">
+                  <i class="fas fa-download"></i>
+                  Download All Candidate Letter
+                </a>
+              </div>
+            </div>
+
+            <h2 class="text-center mt-4">Polling Stations</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="border-top-0"></th>
+                  <th class="border-top-0">Polling Station Name</th>
+                  <th class="border-top-0">Address</th>
+                </tr>
+              </thead>
+              <tbody id="pollingStations-container"></tbody>
+            </table>
+            <a class="btn btn-block btn-primary" href="pollingStations/pollingStations.csv">
+              <i class="fas fa-download"></i>
+              Download Polling Station CSV
+            </a>
+          </section>
+          <section class="tab-pane" id="tab-three" role="tabpanel">
+            <h2 class="text-center">Cast Your Votes</h2>
+            <p class="alert alert-info">
+              Please record the votes for your polling station.
+            </p>
+            <form id="voteForm">
+              <div class="form-group">
+                <label for="voteForm--pollingStationKey">Polling Station</label>
+                <select class="form-control custom-select" id="voteForm--pollingStationKey" name="pollingStationKey" required>
+                  <option value="">(Select a Polling Station)</option>
+                </select>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-md">
+                  <p class="text-center">
+                    <span style="font-size:4rem">
+                    <span id="voteForm--totalVotes">0</span> / <span id="voteForm--maxVotes">0</span></span><br />
+                    vote(s) recorded.
+                  </p>
+                </div>
+                <div class="col-md">
+                  <fieldset id="voteForm-candidates-container"></fieldset>
+                  <p class="text-right">
+                    <button class="btn btn-primary" type="submit">Submit Votes</button>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="tab-pane" id="tab-four" role="tabpanel">
+            <h2 class="text-center">Election Results</h2>
+            <a class="btn btn-block btn-primary" href="mockVoteCounter/votes.csv">
+              <i class="fas fa-mouse-pointer"></i>
+              Right-click and Copy Link to Votes CSV
+            </a>
+            <p class="text-center mt-5">
+              If the event of a hiccup recording votes, a sample votes files is available.</p>
+            <a class="btn btn-block btn-info" href="mockVoteCounter/votes-sample.csv">
+              <i class="fas fa-download"></i>
+              Download Sample Votes CSV
+            </a>
+          </section>
+          <section class="tab-pane" id="tab-five" role="tabpanel">
+
+            <h2 class="text-center">
+              And the winner is...<br />
+              <span style="font-size:100px;text-transform:uppercase;">you!!!</span>
+            </h2>
+
+            <p class="alert alert-success text-center">
+              Thank you so much for participating in this workshop.
+            </p>
+
+            <h3 class="text-center">Take Away Notes</h3>
+
+            <ul>
+              <li>
+                <p>
+                  <strong>Don't let design take away from the content.</strong>
+
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>The Corporate Communications Office is a great resource for all things "communication".</strong><br />
+                  They have a trained eye to find <em>and correct</em> accessibility faus-paus,
+                  all while ensuring your documents meet the standards set out in the Corporate Style Guide.
+                </p>
+              </li>
+            </ul>
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+  <script src="js/election.js"></script>
+</body>
+
+</html>
