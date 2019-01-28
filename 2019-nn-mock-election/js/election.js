@@ -128,7 +128,7 @@
         const candidateObj = candidatesArray[index];
 
         listHTML += "<div class=\"col-sm-6\">" +
-          "<div class=\"card text-white bg-dark mb-2\">" +
+          "<div class=\"card text-white bg-secondary mb-2\">" +
           ("<div class=\"card-body\">" +
             "<div class=\"row\">" +
             "<div class=\"col-md-4\">" +

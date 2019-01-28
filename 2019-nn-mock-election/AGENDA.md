@@ -1,7 +1,12 @@
 # Mock Election Workshop - Agenda
 
-Note that there are often times multiple ways to solve problems,
+Note that there are oftentimes multiple ways to solve problems,
 and there may be more solutions than the ones offered.
+
+Maybe you already have a solution to the problem.
+Maybe my solution is better.  Maybe your solution is better.
+If you pick up at least one new tip from this workshop, I believe it's been an success.
+
 
 ## Step One - We're having an election!
 
@@ -14,31 +19,39 @@ and there may be more solutions than the ones offered.
 Start with [Call for Candidates poster](demoDocuments/callForCandidates.pub) in Microsoft Publisher.
 
 
-#### :x: - A scripting font is used for the heading.
+#### A scripting font is used for the heading.
 
 - Generally these fonts are difficult to read, and their use should be limited.
 
-:heavy_check_mark: -
+:heavy_check_mark:
 Replace the font with something less decorative.
 
 
-#### :x: - The heading has a background image that makes the text difficult to read.
+#### The heading has a background image that makes the text difficult to read.
 
-- Demo Protanopia and Deuteranopia using [CBSim.jar](http://lpetrich.org/Science/ColorBlindnessSim/ColorBlindnessSim.html#use_app).
+Demo Protanopia and Deuteranopia using [CBSim.jar](http://lpetrich.org/Science/ColorBlindnessSim/ColorBlindnessSim.html#use_app).
 
-:heavy_check_mark: -
-Shift the background image down.
+> Success Criterion 1.4.3 Contrast (Minimum)
+> (Level AA)
+>
+> The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+>
+> - Large Text - Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+> - ...
+
+:heavy_check_mark:
+Change the colours, or shift the background image down.
 
 
-#### :x: - The website address is "impossible" to remember.
+#### The website address is "impossible" to remember.
 
-:heavy_check_mark: -
+:heavy_check_mark:
 Use a shortened website address.
 
 
-#### :x: - Location name and map and included, but simple address information is missing.
+#### Location name and map and included, but simple address information is missing.
 
-:heavy_check_mark: -
+:heavy_check_mark:
 Add an easy-to-read address.
 
 
@@ -51,21 +64,33 @@ Add an easy-to-read address.
 
 Start with [Nomination Form](demoDocuments/nominationForm.docx) in Microsoft Word.
 
-#### :x: - Insufficient space to fill out the form.
 
-:heavy_check_mark: -
+#### Insufficient space to fill out the form.
+
+:heavy_check_mark:
 Add some line spaces around the fields.
 
 
-#### :x: - Inconsistent abbreviation of the word "number".
+#### Inconsistent abbreviation of the word "number".
 
-:heavy_check_mark: -
+> Success Criterion 3.1.4 Abbreviations
+> (Level AAA)
+>
+>A mechanism for identifying the expanded form or meaning of abbreviations is available.
+
+
+:heavy_check_mark:
 Avoid abbreviations if possible.  Expand "No." and "#" to "Number".
 
 
-#### :x: - Include inconsistent field styles.
+#### Include inconsistent field styles.
 
-:heavy_check_mark: -
+> Success Criterion 3.2.4 Consistent Identification§
+> (Level AA)
+>
+> Components that have the same functionality within a set of Web pages are identified consistently.
+
+:heavy_check_mark:
 Ensure consistency.
 
 
@@ -79,21 +104,30 @@ Ensure consistency.
 Start with [All Candidate Letter](demoDocuments/allCandidateLetter.docx) in Microsoft Word.
 
 
-#### :x: - A scripting font is used for the body of the letter.
+#### A scripting font is used for the body of the letter.
 
-:heavy_check_mark: -
+:heavy_check_mark:
 Replace it with a more appropriate font.
 
 
-#### :x: - Document uses full justification.
+#### Document uses full justification.
 
-- Full justification is an accessibility concern.
+Full justification is an accessibility concern.
 
-:heavy_check_mark: -
+> Success Criterion 1.4.8 Visual Presentation
+> (Level AAA)
+>
+> For the visual presentation of blocks of text, a mechanism is available to achieve the following:
+> - ...
+> - Text is not justified (aligned to both the left and the right margins).
+> - ...
+
+
+:heavy_check_mark:
 Left justify the text.
 
 
-#### :x: - Language is unnecessarily complicated.
+#### Language is unnecessarily complicated.
 
 Check the reading level of the document.
 
@@ -102,17 +136,26 @@ Check the reading level of the document.
 - Return to the document.
 - Click the *Proofing Errors* button in the bottom-left corner.
 
-:heavy_check_mark: -
+> Success Criterion 3.1.5 Reading Level
+> (Level AAA)
+>
+> When text requires reading ability more advanced than the lower secondary education level
+> after removal of proper names and titles, supplemental content, or a version
+> that does not require reading ability more advanced than the lower secondary education level, is available.
+
+:heavy_check_mark:
 Reduce the unnecessary complexity.
 
-#### :x: - Header is the hero.
+
+#### Header is the hero.
 
 - It should not be larger than the content.
 
-:heavy_check_mark: -
+:heavy_check_mark:
 Reduce the font size of the header.
 
-#### :wrench: - Mail merge the candidate information.
+
+#### Mail merge the candidate information.
 
 - Make sure [Candidates.csv](candidates/candidates.csv) is downloaded.
 - Under the *Mailings* tab, choose *Select Recipients*, then *Use an Existing List*.
@@ -148,5 +191,3 @@ Import CSV results into Excel.
 
 
 ## Step Five - And the winner is...
-
-**Microsoft PowerPoint** or **Microsoft Publisher**
