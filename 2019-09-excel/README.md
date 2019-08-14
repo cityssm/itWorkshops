@@ -19,4 +19,4 @@ and analyzes it in several ways to answer questions.
 
 - [Speaking Notes](speakingNotes.md)
 
-- [Landing Page](index.htm)
+- [Landing Page](https://cityssm.github.io/itWorkshops/2019-09-excel/index.htm)
