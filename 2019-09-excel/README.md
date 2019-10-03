@@ -1,5 +1,4 @@
-# September 2019 - Microsoft Excel 2016
-## When's My Garbage Day?
+# Microsoft Excel 2016 - When's My Garbage Day?
 
 In July 2019, the City of Sault Ste. Marie launched automated garbage collection.
 With the new system came new roll-out garbage carts for all residents,
