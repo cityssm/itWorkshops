@@ -96,9 +96,9 @@ The Function Arguments window should appear.
 
 - In the "Find_text" field, type a space.
 - Select the "Within_text" field.
-- Click on cell "B2".
+- Click on cell "B2" ( `[@Address]` ).
 
-If successful, the "Within_text" field should now have "[@Address]" in it.
+If successful, the "Within_text" field should now have `[@Address]` in it.
 
 - Click "OK".
 
@@ -121,9 +121,9 @@ A new column should be added between "AddressSpace" and "Route_January".
 The Function Arguments window should appear.
 
 - Select the "Text" field.
-- Click on cell B2.
+- Click on cell B2 ( `[@Address]` ).
 - Select the "Num_chars" field.
-- Click on cell C2.
+- Click on cell C2 ( `[@AddressSpace]` ).
 
 Look at the preview.  Note that the Civic Number is shown, but has a space at the end.
 
@@ -155,9 +155,9 @@ A new column should be added between "CivicNumber" and "Route_January".
 The Function Arguments window should appear.
 
 - Select the "Text" field.
-- Click on cell B2.
+- Click on cell B2 ( `[@Address]` ).
 - Select the "Start_num" field.
-- Click on cell C2.
+- Click on cell C2 ( `[@AddressSpace]` ).
 - Select the "Num_chars" field.  Type "1000".
 
 Look at the preview.  Note that the Street Name is shown, but with a space at the beginning.
@@ -190,7 +190,7 @@ but Excel thinks it may be numbers.
 Now sorted nicely by address.
 If you want to have the odd and even addresses separated, you could revisit "Sort", and add "PostalCode" between "StreetName" and "CivicNumber".
 
-## Hide the Address Column
+## Hide the "AddressSpace" Column
 
 It's not necessary to see it.
 
@@ -211,7 +211,7 @@ Only the Queen Street East addresses should be shown.
 
 Note that the values have been filtered to only include the days of the week with Queen Street East records.
 
-** Clear the filter. **
+**Clear the filter.**
 
 ## Question - How Many Addresses Have New Collection Days?
 
@@ -236,9 +236,9 @@ Add a formula.
 The Function Arguments window should appear.
 
 - Select the "Logical" field.
-- Click on cell F2.
+- Click on cell F2 ( `[@[Route_January]]` ).
 - Type "=".
-- Click on cell G2.
+- Click on cell G2 ( `[@[Route_July]]` ).
 - Click OK.
 
 If successful, the entire column should be populated with true and false values.
