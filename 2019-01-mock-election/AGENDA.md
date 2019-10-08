@@ -178,7 +178,7 @@ Gather those votes into a CSV file.
 
 ### Tally the Votes - Microsoft Excel
 
-[Sub Agenda - Tally the Votes](SUBAGENDA-tallyTheVote.md)
+[Sub Agenda - Tally the Votes](SUBAGENDA-tallyTheVotes.md)
 
 Import CSV results into Excel.
 
