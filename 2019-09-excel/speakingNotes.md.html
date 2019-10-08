@@ -465,9 +465,9 @@ Wouldn't it be nice if we could sort by Street Name, then Civic Number?</p>
 <ul>
 <li>In the "Find_text" field, type a space.</li>
 <li>Select the "Within_text" field.</li>
-<li>Click on cell "B2".</li>
+<li>Click on cell "B2" ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@Address]</code> ).</li>
 </ul>
-<p>If successful, the "Within_text" field should now have "[@Address]" in it.</p>
+<p>If successful, the "Within_text" field should now have <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@Address]</code> in it.</p>
 <ul>
 <li>Click "OK".</li>
 </ul>
@@ -490,9 +490,9 @@ Wouldn't it be nice if we could sort by Street Name, then Civic Number?</p>
 <p>The Function Arguments window should appear.</p>
 <ul>
 <li>Select the "Text" field.</li>
-<li>Click on cell B2.</li>
+<li>Click on cell B2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@Address]</code> ).</li>
 <li>Select the "Num_chars" field.</li>
-<li>Click on cell C2.</li>
+<li>Click on cell C2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@AddressSpace]</code> ).</li>
 </ul>
 <p>Look at the preview.  Note that the Civic Number is shown, but has a space at the end.</p>
 <ul>
@@ -523,9 +523,9 @@ Wouldn't it be nice if we could sort by Street Name, then Civic Number?</p>
 <p>The Function Arguments window should appear.</p>
 <ul>
 <li>Select the "Text" field.</li>
-<li>Click on cell B2.</li>
+<li>Click on cell B2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@Address]</code> ).</li>
 <li>Select the "Start_num" field.</li>
-<li>Click on cell C2.</li>
+<li>Click on cell C2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@AddressSpace]</code> ).</li>
 <li>Select the "Num_chars" field.  Type "1000".</li>
 </ul>
 <p>Look at the preview.  Note that the Street Name is shown, but with a space at the beginning.</p>
@@ -555,7 +555,7 @@ but Excel thinks it may be numbers.</p>
 </ul>
 <p>Now sorted nicely by address.
 If you want to have the odd and even addresses separated, you could revisit "Sort", and add "PostalCode" between "StreetName" and "CivicNumber".</p>
-<h2 id="hide-the-address-column">Hide the Address Column</h2>
+<h2 id="hide-the-addressspace-column">Hide the "AddressSpace" Column</h2>
 <p>It's not necessary to see it.</p>
 <ul>
 <li>Scroll to the top of the spreadsheet.</li>
@@ -574,7 +574,7 @@ If you want to have the odd and even addresses separated, you could revisit "Sor
 <li>Next to the "Route_July" column heading, click the "down arrow" button.</li>
 </ul>
 <p>Note that the values have been filtered to only include the days of the week with Queen Street East records.</p>
-<p>** Clear the filter. **</p>
+<p><strong>Clear the filter.</strong></p>
 <h2 id="question---how-many-addresses-have-new-collection-days">Question - How Many Addresses Have New Collection Days?</h2>
 <p>An address has a new collection day if the values in Route_January and Route_July are not the same.</p>
 <p>Create a column.</p>
@@ -596,12 +596,12 @@ If you want to have the odd and even addresses separated, you could revisit "Sor
 <p>The Function Arguments window should appear.</p>
 <ul>
 <li>Select the "Logical" field.</li>
-<li>Click on cell F2.</li>
+<li>Click on cell F2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@[Route_January]]</code> ).</li>
 <li>Type "=".</li>
-<li>Click on cell G2.</li>
+<li>Click on cell G2 ( <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">[@[Route_July]]</code> ).</li>
 <li>Click OK.</li>
 </ul>
-<p>If successful, the entire column should be populated with true and false values.</p>
+<p>If successful, the entire column should be populated with TRUE and FALSE values.</p>
 <ul>
 <li>Next to the "HasNewCollectionDay" column header, click the "down arrow" button.</li>
 <li>Uncheck "FALSE".</li>
@@ -616,7 +616,8 @@ If you want to have the odd and even addresses separated, you could revisit "Sor
 </ul>
 <p>A "Create PivotChart" window should appear.</p>
 <ul>
-<li>Ensure that the "Table\Range" field has "Table1" in it.</li>
+<li>Ensure that the "Table/Range" field has "Table1" in it.</li>
+<li>Ensure that "New Worksheet" is selected as the target.</li>
 <li>Click "OK".</li>
 </ul>
 <p>A new sheet will appear with an empty PivotTable and PivotChart.</p>
@@ -625,7 +626,7 @@ If you want to have the odd and even addresses separated, you could revisit "Sor
 <li>Drag "HasNewCollectionDay" into the "Values" box.</li>
 </ul>
 <p>A table and chart should now appear with the same values from the filter in the previous step.
-By default, a bar chart is used.</p>
+By default, a column chart is used.</p>
 <ul>
 <li>Select the "Design" ribbon.</li>
 <li>Click "Change Chart Type".</li>
@@ -645,7 +646,7 @@ By default, a bar chart is used.</p>
 </ul>
 <p>Does it match the percentage from the news release?</p>
 <h2 id="question---are-the-new-routes-and-days-evenly-distributed">Question - Are the new routes and days evenly distributed?</h2>
-<p>Obviously there's more to it that below.
+<p>Obviously there's more to it than below.
 Things like proximity to the landfill, closeness of collection stops, etc. have an impact.</p>
 <ul>
 <li>Return to the "addressesWithCollection" sheet.</li>
@@ -654,7 +655,8 @@ Things like proximity to the landfill, closeness of collection stops, etc. have 
 </ul>
 <p>A "Create PivotTable" window should appear.</p>
 <ul>
-<li>Ensure that the "Table\Range" field has "Table1" in it.</li>
+<li>Ensure that the "Table/Range" field has "Table1" in it.</li>
+<li>Ensure that "New Worksheet" is selected as the target.</li>
 <li>Click "OK".</li>
 </ul>
 <p>A new sheet will appear with an empty PivotTable.</p>

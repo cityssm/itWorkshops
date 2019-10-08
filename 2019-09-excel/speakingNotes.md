@@ -241,7 +241,7 @@ The Function Arguments window should appear.
 - Click on cell G2 ( `[@[Route_July]]` ).
 - Click OK.
 
-If successful, the entire column should be populated with true and false values.
+If successful, the entire column should be populated with TRUE and FALSE values.
 
 - Next to the "HasNewCollectionDay" column header, click the "down arrow" button.
 - Uncheck "FALSE".
@@ -258,7 +258,8 @@ Sure, you could do the division right now.  You could also use a pie chart.
 
 A "Create PivotChart" window should appear.
 
-- Ensure that the "Table\Range" field has "Table1" in it.
+- Ensure that the "Table/Range" field has "Table1" in it.
+- Ensure that "New Worksheet" is selected as the target.
 - Click "OK".
 
 A new sheet will appear with an empty PivotTable and PivotChart.
@@ -267,7 +268,7 @@ A new sheet will appear with an empty PivotTable and PivotChart.
 - Drag "HasNewCollectionDay" into the "Values" box.
 
 A table and chart should now appear with the same values from the filter in the previous step.
-By default, a bar chart is used.
+By default, a column chart is used.
 
 - Select the "Design" ribbon.
 - Click "Change Chart Type".
@@ -289,7 +290,7 @@ Does it match the percentage from the news release?
 
 ## Question - Are the new routes and days evenly distributed?
 
-Obviously there's more to it that below.
+Obviously there's more to it than below.
 Things like proximity to the landfill, closeness of collection stops, etc. have an impact.
 
 - Return to the "addressesWithCollection" sheet.
@@ -298,7 +299,8 @@ Things like proximity to the landfill, closeness of collection stops, etc. have 
 
 A "Create PivotTable" window should appear.
 
-- Ensure that the "Table\Range" field has "Table1" in it.
+- Ensure that the "Table/Range" field has "Table1" in it.
+- Ensure that "New Worksheet" is selected as the target.
 - Click "OK".
 
 A new sheet will appear with an empty PivotTable.
